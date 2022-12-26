@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen min-w-full bg-zinc-100;
+  }
+
+  #app {
+    @apply p-4;
+  }
+}
