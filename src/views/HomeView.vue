@@ -19,6 +19,7 @@ const submitText = ref(() => {
       console.log(response);
       if (response.status == 200) {
         btn.classList.remove('loading');
+        if (btn.classList.contains('btn-error')) btn.classList.remove('btn-error');
         btn.classList.add('btn-success');
         buttonText1.value = '发送成功';
       }
